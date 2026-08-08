@@ -1,6 +1,6 @@
 export const btnAdjuntarArchivos = () => {
     const element = document.createElement('button')
-    element.classList.add('.boton')
+    element.classList.add('boton')
     element.id = 'btn-adjuntar-archivo'
     element.textContent = '+'
     element.addEventListener('click', adjuntar_archivos)
