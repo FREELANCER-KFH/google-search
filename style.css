@@ -1,15 +1,128 @@
-body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+/* Reset básico y centrado principal */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
 }
 
-.boton {
-    width: 300px;
-    height: 200px;
-    border: 5px solid rgba(255,0,0,0.7);
-    border-radius: 50%;
-    background-color: rgba(0,0,255,0.6);
-    color: rgba(255,255,255,.7);
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #ffffff;
+}
+
+/* Contenedor Principal */
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  width: 100%;
+  max-width: 680px;
+  padding: 20px;
+}
+
+/* Logo */
+.google-logo {
+  height: 92px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+/* Cuadro de Búsqueda */
+.search-box {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 8px 14px;
+  border: 1px solid #dfe1e5;
+  border-radius: 24px;
+  background-color: #ffffff;
+  box-shadow: none;
+  transition: box-shadow 0.2s ease, border-color 0.2s ease;
+  gap: 8px;
+}
+
+.search-box:hover,
+.search-box:focus-within {
+  box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
+  border-color: transparent;
+}
+
+.search-box input {
+  flex: 1;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  color: #202124;
+  background: transparent;
+  padding: 0 8px;
+}
+
+/* Botones de Icono dentro de la barra */
+.btn-icon {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px;
+  border-radius: 50%;
+  transition: background-color 0.2s ease;
+}
+
+.btn-icon:hover {
+  background-color: #f1f3f4;
+}
+
+/* Botón Modo IA */
+.btn-modo-ia {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background-color: #f8f9fa;
+  border: 1px solid #dadce0;
+  border-radius: 16px;
+  padding: 6px 12px;
+  font-size: 13px;
+  font-weight: 500;
+  color: #3c4043;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background-color 0.2s ease;
+}
+
+.btn-modo-ia:hover {
+  background-color: #f1f3f4;
+  border-color: #d2d4d7;
+}
+
+/* Contenedor y Botones Inferiores */
+.actions-container {
+  display: flex;
+  gap: 12px;
+  margin-top: 8px;
+}
+
+.btn-action {
+  background-color: #f8f9fa;
+  border: 1px solid #f8f9fa;
+  border-radius: 4px;
+  color: #3c4043;
+  font-size: 14px;
+  padding: 10px 16px;
+  cursor: pointer;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.btn-action:hover {
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  background-color: #f8f9fa;
+  border-color: #dadce0;
+  color: #202124;
 }
