@@ -1,6 +1,6 @@
 export const Logo = () => {
   const img = document.createElement('img')
-  img.src = 'https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x91dp.png'
+  img.src = 'https://1000marcas.net/wp-content/uploads/2020/02/Google-Logo.png'
   img.alt = 'Google'
   img.className = 'google-logo'
   return img
