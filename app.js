@@ -1,4 +1,4 @@
-import { ContenedorPrincipal } from './components/contenedor-principal.js'
+import { ContenedorPrincipal } from './elements/contenedor-principal.js'
 
 const root = document.getElementById('root')
 

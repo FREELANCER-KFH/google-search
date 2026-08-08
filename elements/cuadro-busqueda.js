@@ -1,7 +1,7 @@
-import { BtnAdjuntarArchivos } from '../elements/buttons/btn-adjuntar-archivos.js'
-import { BtnMicrofono } from '../elements/buttons/btn-microfono.js'
-import { BtnBuscarImagen } from '../elements/buttons/btn-buscar-imagen.js'
-import { BtnModoIA } from '../elements/buttons/btn-modo-ia.js'
+import { BtnAdjuntarArchivos } from './buttons/btn-adjuntar-archivos.js'
+import { BtnMicrofono } from './buttons/btn-microfono.js'
+import { BtnBuscarImagen } from './buttons/btn-buscar-imagen.js'
+import { BtnModoIA } from './buttons/btn-modo-ia.js'
 
 export const CuadroBusqueda = () => {
   const container = document.createElement('div')
