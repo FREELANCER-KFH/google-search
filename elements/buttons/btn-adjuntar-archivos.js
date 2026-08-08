@@ -2,7 +2,7 @@ export const BtnAdjuntarArchivos = () => {
   const button = document.createElement('button')
   button.className = 'btn-icon btn-adjuntar'
   button.innerHTML = '➕'
-  button.addEventListener('click', adjuntar-archivos)
+  button.addEventListener('click', adjuntar_archivos)
   return button
 }
 
